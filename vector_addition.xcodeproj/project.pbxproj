@@ -28,7 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3A099F52277E57CF006691CB /* try */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = try; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A099F52277E57CF006691CB /* vector_addition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vector_addition; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A099F55277E57CF006691CB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3A099F5D277E5825006691CB /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		3A099F5F277E582E006691CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,7 +56,7 @@
 		3A099F49277E57CF006691CB = {
 			isa = PBXGroup;
 			children = (
-				3A099F54277E57CF006691CB /* try */,
+				3A099F54277E57CF006691CB /* vector_addition */,
 				3A099F53277E57CF006691CB /* Products */,
 				3A099F5C277E5825006691CB /* Frameworks */,
 			);
@@ -65,12 +65,12 @@
 		3A099F53277E57CF006691CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A099F52277E57CF006691CB /* try */,
+				3A099F52277E57CF006691CB /* vector_addition */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A099F54277E57CF006691CB /* try */ = {
+		3A099F54277E57CF006691CB /* vector_addition */ = {
 			isa = PBXGroup;
 			children = (
 				3A099F55277E57CF006691CB /* main.cpp */,
@@ -79,7 +79,7 @@
 				3A099F64277E59A6006691CB /* add.metal */,
 				3A099F63277E58EB006691CB /* metal-cpp */,
 			);
-			path = try;
+			path = vector_addition;
 			sourceTree = "<group>";
 		};
 		3A099F5C277E5825006691CB /* Frameworks */ = {
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A099F51277E57CF006691CB /* try */ = {
+		3A099F51277E57CF006691CB /* vector_addition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A099F59277E57CF006691CB /* Build configuration list for PBXNativeTarget "try" */;
+			buildConfigurationList = 3A099F59277E57CF006691CB /* Build configuration list for PBXNativeTarget "vector_addition" */;
 			buildPhases = (
 				3A099F4E277E57CF006691CB /* Sources */,
 				3A099F4F277E57CF006691CB /* Frameworks */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = try;
+			name = vector_addition;
 			productName = try;
-			productReference = 3A099F52277E57CF006691CB /* try */;
+			productReference = 3A099F52277E57CF006691CB /* vector_addition */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3A099F4D277E57CF006691CB /* Build configuration list for PBXProject "try" */;
+			buildConfigurationList = 3A099F4D277E57CF006691CB /* Build configuration list for PBXProject "vector_addition" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A099F51277E57CF006691CB /* try */,
+				3A099F51277E57CF006691CB /* vector_addition */,
 			);
 		};
 /* End PBXProject section */
@@ -296,7 +296,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A099F4D277E57CF006691CB /* Build configuration list for PBXProject "try" */ = {
+		3A099F4D277E57CF006691CB /* Build configuration list for PBXProject "vector_addition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A099F57277E57CF006691CB /* Debug */,
@@ -305,7 +305,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A099F59277E57CF006691CB /* Build configuration list for PBXNativeTarget "try" */ = {
+		3A099F59277E57CF006691CB /* Build configuration list for PBXNativeTarget "vector_addition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A099F5A277E57CF006691CB /* Debug */,

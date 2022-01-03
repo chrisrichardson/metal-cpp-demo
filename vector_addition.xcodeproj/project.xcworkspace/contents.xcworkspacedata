@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/moritzhof/Documents/Programming/Metal/try/vector_addition.xcodeproj">
    </FileRef>
 </Workspace>
