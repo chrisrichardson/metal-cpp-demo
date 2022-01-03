@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3A099F56277E57CF006691CB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A099F55277E57CF006691CB /* main.cpp */; };
+		3A099F5E277E5825006691CB /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A099F5D277E5825006691CB /* Metal.framework */; };
+		3A099F60277E582E006691CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A099F5F277E582E006691CB /* Foundation.framework */; };
+		3A099F62277E5843006691CB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A099F61277E5843006691CB /* QuartzCore.framework */; };
+		3A099F65277E59A6006691CB /* add.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3A099F64277E59A6006691CB /* add.metal */; };
+		3A099F682782ECBB006691CB /* metal_adder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A099F662782ECBB006691CB /* metal_adder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,13 @@
 /* Begin PBXFileReference section */
 		3A099F52277E57CF006691CB /* try */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = try; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A099F55277E57CF006691CB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3A099F5D277E5825006691CB /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		3A099F5F277E582E006691CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A099F61277E5843006691CB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3A099F63277E58EB006691CB /* metal-cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "metal-cpp"; sourceTree = SOURCE_ROOT; };
+		3A099F64277E59A6006691CB /* add.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = add.metal; sourceTree = "<group>"; };
+		3A099F662782ECBB006691CB /* metal_adder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = metal_adder.cpp; sourceTree = "<group>"; };
+		3A099F672782ECBB006691CB /* metal_adder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = metal_adder.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A099F62277E5843006691CB /* QuartzCore.framework in Frameworks */,
+				3A099F60277E582E006691CB /* Foundation.framework in Frameworks */,
+				3A099F5E277E5825006691CB /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +58,7 @@
 			children = (
 				3A099F54277E57CF006691CB /* try */,
 				3A099F53277E57CF006691CB /* Products */,
+				3A099F5C277E5825006691CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +74,22 @@
 			isa = PBXGroup;
 			children = (
 				3A099F55277E57CF006691CB /* main.cpp */,
+				3A099F662782ECBB006691CB /* metal_adder.cpp */,
+				3A099F672782ECBB006691CB /* metal_adder.hpp */,
+				3A099F64277E59A6006691CB /* add.metal */,
+				3A099F63277E58EB006691CB /* metal-cpp */,
 			);
 			path = try;
+			sourceTree = "<group>";
+		};
+		3A099F5C277E5825006691CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A099F61277E5843006691CB /* QuartzCore.framework */,
+				3A099F5F277E582E006691CB /* Foundation.framework */,
+				3A099F5D277E5825006691CB /* Metal.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A099F682782ECBB006691CB /* metal_adder.cpp in Sources */,
 				3A099F56277E57CF006691CB /* main.cpp in Sources */,
+				3A099F65277E59A6006691CB /* add.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,9 +272,11 @@
 		3A099F5A277E57CF006691CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YRA72GFXBM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/metal-cpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -250,9 +284,11 @@
 		3A099F5B277E57CF006691CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YRA72GFXBM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/metal-cpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
